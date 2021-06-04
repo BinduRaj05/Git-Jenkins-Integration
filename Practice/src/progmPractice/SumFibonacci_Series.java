@@ -1,0 +1,26 @@
+package progmPractice;
+
+public class SumFibonacci_Series 
+{
+
+	public static void main(String[] args) 
+	{
+	
+		int fib1=0;
+		int fib2=1;
+		int fib3;
+		int num=10;
+		int sum=fib2;
+		//System.out.print(fib1+" "+fib2);
+		for (int i = 0; i <=num; i++) 
+		{
+			fib3=fib1+fib2;
+			sum=sum+fib3;
+			fib1=fib2;
+			fib2=fib3;
+			//System.out.print(" "+fib3);
+			
+		}
+	System.out.println(sum);
+	}
+}
